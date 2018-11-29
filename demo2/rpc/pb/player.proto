@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package pb;
+
+service Player {
+    rpc RegisterCodec(RegisterCodecRequest) returns (RegisterCodecResponse) {}
+}
+
+message RegisterCodecRequest {
+    string addr = 1;
+    string ext = 2;
+}
+
+message RegisterCodecResponse {}

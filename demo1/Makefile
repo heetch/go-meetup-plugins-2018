@@ -12,4 +12,4 @@ $(NAME):
 	@ go build -o ./bin/player-plugin2 ./cmd/plugin2
 
 run: build
-	@ ./demo1
+	./demo1

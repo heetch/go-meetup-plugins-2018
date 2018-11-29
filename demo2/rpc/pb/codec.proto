@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package pb;
+
+service Codec {
+    rpc AudioFileMetadata(AudioFileMetadataRequest) returns (AudioFileMetadataResponse) {}
+    rpc DecodeAudioFile(DecodeAudioFileRequest) returns (stream DecodeAudioFileResponse) {}
+}
+
+message AudioFileMetadataRequest {
+    string path = 1;
+}
+
+message AudioFileMetadataResponse {
+    int32 sample_rate = 1;
+    int64 length = 2;
+}
+
+message DecodeAudioFileRequest {
+    string path = 1;
+}
+
+message DecodeAudioFileResponse {
+    bytes chunk = 1;
+}

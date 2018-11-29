@@ -20,16 +20,16 @@ func start() error {
 	quit := make(chan os.Signal, 1)
 	signal.Notify(quit, os.Interrupt)
 
-	fmt.Println("Core: Loading plugins...")
+	fmt.Println("Core: Starting plugins...")
 	loader := demo1.PluginLoader{Path: "./bin", PlayerAddr: "some-addr"}
 	err := loader.Load()
 	if err != nil {
-		return errors.Wrap(err, "player: failed to load plugins")
+		return errors.Wrap(err, "Core: failed to load plugins")
 	}
-	fmt.Println("Core: All plugins successfully loaded")
+	fmt.Println("Core: All plugins successfully started")
 
 	<-quit
 	fmt.Println()
-	fmt.Println("Core: closing plugins")
+	fmt.Println("Core: stopping plugins")
 	return loader.Stop()
 }

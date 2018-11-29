@@ -2,14 +2,258 @@
 
 
 [[projects]]
+  branch = "master"
+  digest = "1:dcc7a9446ce060032e1a7849769a43469b0324867125bd1d5a6fabc26fa34d81"
+  name = "github.com/cryptix/wav"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "8bdace674401f0bd3b63c65479b6a6ff1f9d5e44"
+
+[[projects]]
+  digest = "1:ffe9824d294da03b391f44e1ae8281281b4afc1bdaa9588c9097785e3af10cec"
+  name = "github.com/davecgh/go-spew"
+  packages = ["spew"]
+  pruneopts = "UT"
+  revision = "8991bc29aa16c548c550c7ff78260e27b9ab7c73"
+  version = "v1.1.1"
+
+[[projects]]
+  digest = "1:5d1b5a25486fc7d4e133646d834f6fca7ba1cef9903d40e7aa786c41b89e9e91"
+  name = "github.com/golang/protobuf"
+  packages = [
+    "proto",
+    "protoc-gen-go/descriptor",
+    "ptypes",
+    "ptypes/any",
+    "ptypes/duration",
+    "ptypes/timestamp",
+  ]
+  pruneopts = "UT"
+  revision = "aa810b61a9c79d51363740d207bb46cf8e620ed5"
+  version = "v1.2.0"
+
+[[projects]]
+  branch = "master"
+  digest = "1:f14d1b50e0075fb00177f12a96dd7addf93d1e2883c25befd17285b779549795"
+  name = "github.com/gopherjs/gopherjs"
+  packages = ["js"]
+  pruneopts = "UT"
+  revision = "d547d1d9531ed93dbdebcbff7f83e7c876a1e0ee"
+
+[[projects]]
+  digest = "1:0b226f71747698cd3b03156781c849c3df46e229eef5c3682e182558cf34e8f0"
+  name = "github.com/gopherjs/gopherwasm"
+  packages = ["js"]
+  pruneopts = "UT"
+  revision = "b0e1786f520333e4546f02930c5ca8a929b38841"
+  version = "v1.0.1"
+
+[[projects]]
+  digest = "1:52430c9cb1b419d4d7cc21b6536732a492376820e4d6aa43bc2dd0b53ae491a5"
+  name = "github.com/hajimehoshi/go-mp3"
+  packages = [
+    ".",
+    "internal/bits",
+    "internal/consts",
+    "internal/frame",
+    "internal/frameheader",
+    "internal/huffman",
+    "internal/imdct",
+    "internal/maindata",
+    "internal/sideinfo",
+  ]
+  pruneopts = "UT"
+  revision = "90191ee719ddc192865cd96bdc8013ef1ed6dbea"
+  version = "v0.1.1"
+
+[[projects]]
+  digest = "1:7dbca992a0baa4051dbca01d73ef7a790b8838f159ddbabace2657b81aeafc43"
+  name = "github.com/hajimehoshi/oto"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "3a9bb05c78a0583c0f5a6c041eeb05a6ceec8ef9"
+  version = "v0.2.1"
+
+[[projects]]
+  digest = "1:40e195917a951a8bf867cd05de2a46aaf1806c50cf92eebf4c16f78cd196f747"
   name = "github.com/pkg/errors"
   packages = ["."]
+  pruneopts = "UT"
   revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
   version = "v0.8.0"
+
+[[projects]]
+  digest = "1:0028cb19b2e4c3112225cd871870f2d9cf49b9b4276531f03438a88e94be86fe"
+  name = "github.com/pmezard/go-difflib"
+  packages = ["difflib"]
+  pruneopts = "UT"
+  revision = "792786c7400a136282c1664665ae0a8db921c6c2"
+  version = "v1.0.0"
+
+[[projects]]
+  digest = "1:c40d65817cdd41fac9aa7af8bed56927bb2d6d47e4fea566a74880f5c2b1c41e"
+  name = "github.com/stretchr/testify"
+  packages = [
+    "assert",
+    "require",
+  ]
+  pruneopts = "UT"
+  revision = "f35b8ab0b5a2cef36673838d662e249dd9c94686"
+  version = "v1.2.2"
+
+[[projects]]
+  branch = "master"
+  digest = "1:991ca5370801d648b645d81502f5cbeac3e57f333fbf99303adeb378e99ba956"
+  name = "golang.org/x/exp"
+  packages = [
+    "shiny/driver/gldriver",
+    "shiny/driver/internal/drawer",
+    "shiny/driver/internal/errscreen",
+    "shiny/driver/internal/event",
+    "shiny/driver/internal/lifecycler",
+    "shiny/driver/internal/win32",
+    "shiny/driver/internal/x11key",
+    "shiny/screen",
+  ]
+  pruneopts = "UT"
+  revision = "2bc4fd139c1b1e9b6f5e20ba99021c2ac0c29ec3"
+
+[[projects]]
+  branch = "master"
+  digest = "1:b92d5f74778f4766055011db9abc4bba54edbe5e690a544e6dbfe4dd90824719"
+  name = "golang.org/x/image"
+  packages = ["math/f64"]
+  pruneopts = "UT"
+  revision = "cd38e8056d9b27bb2f265effa37fb0ea6b8a7f0f"
+
+[[projects]]
+  branch = "master"
+  digest = "1:de68f712f85c8662d006696663ddcbb479c00328c101b453d5a6ff3bff1b62b6"
+  name = "golang.org/x/mobile"
+  packages = [
+    "app",
+    "app/internal/callfn",
+    "event/key",
+    "event/lifecycle",
+    "event/mouse",
+    "event/paint",
+    "event/size",
+    "event/touch",
+    "geom",
+    "gl",
+    "internal/mobileinit",
+  ]
+  pruneopts = "UT"
+  revision = "a27dd33d354d004b2de14a791df5af8a00f68b8e"
+
+[[projects]]
+  branch = "master"
+  digest = "1:6ca51c5d8a610b3da56856df7a8f8f3e075eba8d5f7a4acbadd79b2d2a368054"
+  name = "golang.org/x/net"
+  packages = [
+    "context",
+    "http/httpguts",
+    "http2",
+    "http2/hpack",
+    "idna",
+    "internal/timeseries",
+    "trace",
+  ]
+  pruneopts = "UT"
+  revision = "adae6a3d119ae4890b46832a2e88a95adc62b8e7"
+
+[[projects]]
+  branch = "master"
+  digest = "1:0c7cb58af944f9690af91474a75371eecfe54c1ce3771a8dc08924430ee785d3"
+  name = "golang.org/x/sys"
+  packages = [
+    "unix",
+    "windows",
+  ]
+  pruneopts = "UT"
+  revision = "4ed8d59d0b35e1e29334a206d1b3f38b1e5dfb31"
+
+[[projects]]
+  digest = "1:a2ab62866c75542dd18d2b069fec854577a20211d7c0ea6ae746072a1dccdd18"
+  name = "golang.org/x/text"
+  packages = [
+    "collate",
+    "collate/build",
+    "internal/colltab",
+    "internal/gen",
+    "internal/tag",
+    "internal/triegen",
+    "internal/ucd",
+    "language",
+    "secure/bidirule",
+    "transform",
+    "unicode/bidi",
+    "unicode/cldr",
+    "unicode/norm",
+    "unicode/rangetable",
+  ]
+  pruneopts = "UT"
+  revision = "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
+  version = "v0.3.0"
+
+[[projects]]
+  branch = "master"
+  digest = "1:56b0bca90b7e5d1facf5fbdacba23e4e0ce069d25381b8e2f70ef1e7ebfb9c1a"
+  name = "google.golang.org/genproto"
+  packages = ["googleapis/rpc/status"]
+  pruneopts = "UT"
+  revision = "31ac5d88444a9e7ad18077db9a165d793ad06a2e"
+
+[[projects]]
+  digest = "1:e72ebff67b73d31785959af0660215213c58ab50d7b7d61aac0f1a6834c07e8c"
+  name = "google.golang.org/grpc"
+  packages = [
+    ".",
+    "balancer",
+    "balancer/base",
+    "balancer/roundrobin",
+    "codes",
+    "connectivity",
+    "credentials",
+    "encoding",
+    "encoding/proto",
+    "grpclog",
+    "internal",
+    "internal/backoff",
+    "internal/channelz",
+    "internal/envconfig",
+    "internal/grpcrand",
+    "internal/transport",
+    "keepalive",
+    "metadata",
+    "naming",
+    "peer",
+    "reflection",
+    "reflection/grpc_reflection_v1alpha",
+    "resolver",
+    "resolver/dns",
+    "resolver/passthrough",
+    "stats",
+    "status",
+    "tap",
+  ]
+  pruneopts = "UT"
+  revision = "2e463a05d100327ca47ac218281906921038fd95"
+  version = "v1.16.0"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "be52a27ec302b8a6c01d9cceda92c94ebffda1207e5c8ec8bee6579b794eaa8e"
+  input-imports = [
+    "github.com/cryptix/wav",
+    "github.com/golang/protobuf/proto",
+    "github.com/hajimehoshi/go-mp3",
+    "github.com/hajimehoshi/oto",
+    "github.com/pkg/errors",
+    "github.com/stretchr/testify/require",
+    "golang.org/x/net/context",
+    "google.golang.org/grpc",
+    "google.golang.org/grpc/reflection",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
