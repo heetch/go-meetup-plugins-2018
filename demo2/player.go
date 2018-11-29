@@ -11,8 +11,6 @@ import (
 )
 
 type Player struct {
-	Middlewares []Middleware
-
 	codecs map[string]Codec
 	mu     sync.Mutex
 }
@@ -51,14 +49,9 @@ func (p *Player) Run(ctx context.Context, path string) error {
 	}
 	defer player.Close()
 
-	var reader io.Reader = dec
-	for _, m := range p.Middlewares {
-		reader = m.Pipe(reader)
-	}
-
 	done := make(chan struct{})
 	go func() {
-		_, err = io.Copy(player, reader)
+		_, err = io.Copy(player, dec)
 		close(done)
 	}()
 
@@ -80,8 +73,4 @@ type Decoder interface {
 	io.Reader
 
 	SampleRate() int
-}
-
-type Middleware interface {
-	Pipe(io.Reader) io.Reader
 }
